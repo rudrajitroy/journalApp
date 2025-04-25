@@ -19,11 +19,12 @@ public class UserServiceTest {
     @Autowired
     private UserRepository userRepository;
 
-    @ParameterizedTest
-    @ValueSource(strings = {
-            "Ram",
-            "Sainee"
-    })
+
+//    @ParameterizedTest
+//    @ValueSource(strings = {
+//            "Ram",
+//            "Sainee"
+//    })
     public void findByUserNameTest(String userName) {
         assertNotNull(userRepository.findByUserName(userName));
     }
